@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 const PORT = 8080;
-console.log(__dirname);
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('data'));
@@ -13,7 +13,6 @@ app.use('/jsfiles', express.static(path.join(__dirname, '/app/assets/javascript'
 
 require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
-// require('./app/assets/javascript/app.js')(app);
 
 app.listen(PORT, () =>{
     console.log('App listening on port: ' + PORT);
