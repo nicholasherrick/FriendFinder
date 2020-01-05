@@ -9,3 +9,10 @@ app.use(express.json());
 app.use(express.static('data'));
 app.use(express.static('public'));
 app.use(express.static('routing'));
+
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
+
+app.listen(PORT, () =>{
+    console.log('App listening on port: ' + PORT);
+});
