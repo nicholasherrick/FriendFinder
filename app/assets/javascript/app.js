@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('#submit').on('click', function(event){
         event.preventDefault();
-        console.log("click");
         var name = $('#name').val().trim();
         var photo = $('#photo').val().trim();
         var q1 = $('#q1').val();
