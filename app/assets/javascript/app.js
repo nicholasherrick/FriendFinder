@@ -21,6 +21,14 @@ $(document).ready(function(){
         },
         function(data, status){
             console.log("Data: " + data + "\nStatus: " + status);
+            $("#myModal").modal();
+            $("#match").append("<p>" + data.name + "</p>");
+            $("#match").append("<img src='" + data.photo + "' alt='Photo'>");
         });
+    });
+
+    $(document.body).on("click", ".closemodal", function(event){
+        event.preventDefault();
+        $("#match").empty();
     });
 });
