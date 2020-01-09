@@ -52,3 +52,10 @@ p{
     background-color: palevioletred;
     color: white;
 }
+
+.matchimage{
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 50%;
+    height: 50%;
+}

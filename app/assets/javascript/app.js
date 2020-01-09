@@ -23,7 +23,8 @@ $(document).ready(function(){
             console.log("Data: " + data + "\nStatus: " + status);
             $("#myModal").modal();
             $("#match").append("<p>" + data.name + "</p>");
-            $("#match").append("<img src='" + data.photo + "' alt='Photo'>");
+            $("#match").append("<img class='matchimage' src='" + data.photo + "' alt='Photo'>");
+            $("#name, #photo, #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10").val("");
         });
     });
 
