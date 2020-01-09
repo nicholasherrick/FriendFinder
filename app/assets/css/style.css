@@ -1,0 +1,54 @@
+body{
+    background-image: url(bananas.png);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+}
+
+.greythis{
+    background-color: aliceblue;
+}
+
+#surveytitle{
+    font-size: 40px;
+    padding: 20px;
+    background-color: palevioletred;
+    color: white;
+}
+
+h2{
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+p{
+    margin-left: 15px;
+}
+
+#name{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#photo{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#thelinks{
+    margin-top: 30px;
+}
+
+#surveybutton{
+    margin: auto;
+}
+
+.jumbotron{
+    background-color: palevioletred;
+    color: white;
+}
